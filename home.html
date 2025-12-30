@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Chatbot — Home</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style.css" />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="" crossorigin="anonymous">
+    </head>
+    <body>
+                <div class="chat-app">
+                        <header class="chat-header">
+                                <div class="title-wrap">
+                                    <div class="logo">🤖</div>
+                                    <div>
+                                        <h1>Chatbot</h1>
+                                        <p class="subtitle">โจทย์คำถามเด็กประถม — simple demo</p>
+                                    </div>
+                                </div>
+                                <div class="header-controls">
+                                    <button id="themeToggle" class="btn-ghost" title="Toggle dark mode">🌙</button>
+                                </div>
+                        </header>
+
+            <main class="chat-window" id="chatWindow" aria-live="polite">
+                <ul class="messages" id="messages"></ul>
+            </main>
+
+            <form id="chatForm" class="chat-form" autocomplete="off">
+                <label for="messageInput" class="visually-hidden">Message</label>
+                <input id="messageInput" name="message" placeholder="Type a message..." autocomplete="off" required />
+                <button type="submit" aria-label="Send message">Send</button>
+            </form>
+        </div>
+
+        <!-- mathjs for evaluation and KaTeX auto-render for math display -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+        <script defer src="chat.js"></script>
+    </body>
+</html>
