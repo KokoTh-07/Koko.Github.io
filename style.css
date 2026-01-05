@@ -64,7 +64,7 @@ body{
 /* Dark mode with workspace image background */
 body.dark{background:
   linear-gradient(180deg,rgba(6,8,14,0.58),rgba(4,6,10,0.68)),
-  url("../image/Nigg.jpg") center/cover no-repeat fixed;
+  url("https://www.wbur.org/hereandnow/2020/07/13/emmanuel-acho-uncomfortable-conversations") center/cover no-repeat fixed;
   background-blend-mode:overlay;
 }
 /* make the panel slightly translucent so the background image shows through */
@@ -79,3 +79,4 @@ body.dark .btn-ghost:hover{background:rgba(255,255,255,0.02)}
 /* lift motion when input is focused/clicked */
 #chatForm.chat-form.active{transform:translateY(-10px);box-shadow:0 12px 32px rgba(20,32,64,0.06)}
 #chatForm.chat-form.active #messageInput{box-shadow:0 8px 20px rgba(88,97,255,0.08)}
+
